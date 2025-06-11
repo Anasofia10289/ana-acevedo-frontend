@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "estudiante@estudiafacil.com",
+      "password": "123456",
+      "name": "Ana Acevedo"
+    },
+    {
+      "id": "2",
+      "email": "admin@estudiafacil.com",
+      "password": "admin123",
+      "name": "Admin EstuFacil"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "3",
+      "title": "Laboratorio de Química",
+      "subject": "Química",
+      "dueDate": "2024-06-18",
+      "status": "completed",
+      "userId": 1,
+      "createdAt": "2024-06-03T09:15:00.000Z"
+    },
+    {
+      "id": "c310",
+      "title": "jhiuhuih",
+      "subject": "Educación Física",
+      "dueDate": "2026-01-01",
+      "status": "completed",
+      "userId": "1",
+      "createdAt": "2025-06-10T23:23:04.638Z"
+    },
+    {
+      "id": "0065",
+      "title": "sdad",
+      "subject": "Biología",
+      "dueDate": "2025-12-05",
+      "status": "pending",
+      "userId": "1",
+      "createdAt": "2025-06-11T04:07:20.867Z"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fcbad3 0%, #a18cd1 100%);
+  min-height: 100vh;
+  color: #4b2e4a;
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #5c3d63;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #fcdce3;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: #fff6f9;
+  color: #5c3d63;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f48fb1;
+  box-shadow: 0 0 0 3px rgba(244, 143, 177, 0.2);
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #f48fb1 0%, #d1c4e9 100%);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(244, 143, 177, 0.3);
+}
+
+.btn-secondary {
+  background: #c5a3bf;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #a882a7;
+}
+
+.btn-success {
+  background: #a3d9c9;
+  color: #174b4b;
+}
+
+.btn-success:hover:not(:disabled) {
+  background: #7fcbb3;
+}
+
+.btn-danger {
+  background: #f78da7;
+  color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #f06292;
+}
+
+.btn-warning {
+  background: #fcbf49;
+  color: white;
+}
+
+.btn-warning:hover:not(:disabled) {
+  background: #f5a623;
+}
+
+.error-message {
+  background: #ffe5ec;
+  color: #c9184a;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ffccd5;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.success-message {
+  background: #e6fff7;
+  color: #1a7f5a;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #b2f2e5;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: 20px 24px;
+  background: #fff0f5;
+  border-bottom: 1px solid #fcdce3;
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-footer {
+  padding: 16px 24px;
+  background: #fff0f5;
+  border-top: 1px solid #fcdce3;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 16px;
+    border-radius: 8px;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
