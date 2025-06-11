@@ -1,12 +1,111 @@
-# React + Vite
+# 🎓 EstudiaFácil (Gestor de Tareas Académicas) - Prueba Técnica Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada como parte de la prueba técnica para la vacante de **Desarrollador Front-End Junior** en **EduWise Inc.**. Permite a los estudiantes autenticados gestionar sus tareas académicas de forma sencilla y organizada.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React + Vite
+- 💅 CSS Puro (sin frameworks)
+- 🗂️ Arquitectura modular
+- 📦 json-server (para simular API REST)
 
-## Expanding the ESLint configuration
+## 📦 Instalación y configuración
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Sigue estos pasos para ejecutar el proyecto localmente:
+
+1. **Clona el repositorio:**
+
+```bash
+git clone https://github.com/Anasofia10289/ana-acevedo-frontend.git
+cd ana-acevedo-frontend
+```
+
+2. **Instala las dependencias:**
+
+```bash
+npm install
+```
+
+3. **Instala json-server globalmente (si no lo tienes):**
+
+```bash
+npm install -g json-server
+```
+
+4. **Levanta la API simulada:**
+
+```bash
+json-server --watch db.json --port 3001
+```
+
+> Asegúrate de tener el archivo `db.json` en la raíz del proyecto. Este actúa como backend simulado para manejar usuarios y tareas.
+
+5. **Ejecuta la aplicación React:**
+
+```bash
+npm run dev
+```
+
+## 📋 Funcionalidades
+
+### ✅ Autenticación
+
+- **Login básico:** con correo y contraseña.
+- **Validación contra la API (json-server).**
+- **Redirección al dashboard en caso exitoso.**
+- **Protección de rutas internas.**
+
+### 📌 Gestión de tareas
+
+- **Crear tarea:** con título, materia, fecha límite y estado (pendiente/completada).
+- **Listar tareas:** en tarjetas o tabla.
+- **Editar tareas:** modificar campos.
+- **Eliminar tareas:** con confirmación usando SweetAlert2.
+- **Marcar como completada.**
+
+### 🔍 Filtrado y búsqueda
+
+- **Buscar tareas por materia.**
+- **Filtrar tareas por estado.**
+
+### 📊 Resumen visual
+
+- Cantidad total de tareas.
+- Completadas y pendientes.
+
+### 🔐 Cierre de sesión
+
+- Botón de logout con redirección a login.
+
+## 📁 Estructura del proyecto
+
+```
+src/
+├── components/        
+├── context/           
+├── services/                      
+├── styles/            
+├── App.jsx
+├── index.css
+└── main.jsx
+
+```
+
+## ✨ Buenas prácticas aplicadas
+
+- Componentes funcionales y organizados.
+- Manejo de estado con hooks (`useState`, `useEffect`, `useContext`).
+- Rutas protegidas con `react-router-dom`.
+- Separación clara entre lógica, vista y estilos.
+- Diseño responsivo básico usando solo CSS.
+
+---
+
+💼 **Simulación de entorno laboral real**: Esta prueba busca evaluar tu capacidad técnica, organización y lógica en un proyecto front-end moderno.
+
+---
+
+## 👨‍💻 Autor
+
+**Ana Sofia Acevedo Quiroz**  
+Estudiante de desarrollo web en Cesde | Apasionado por la programación front-end  
